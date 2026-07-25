@@ -5,9 +5,10 @@
 This is a real macOS WidgetKit widget, not a floating `NSWindow`.
 
 - The desktop surface belongs to macOS and is added from the system widget gallery.
-- A small menu-bar host refreshes Codex usage in the background and writes only normalized usage values into a shared App Group container.
+- An invisible background host refreshes Codex usage and writes only normalized usage values into a shared App Group container.
 - The widget extension reads the shared snapshot and asks WidgetKit to render it.
 - Codex login tokens never enter the shared container or widget process.
+- The host creates no Dock icon, status-bar item, or normal window.
 
 ## Widget families
 
@@ -38,6 +39,7 @@ Every item above must remain visible without interaction in both supported sizes
 - Appears in the macOS widget gallery as “Codex 余额”.
 - Can be placed on the desktop and follows system widget positioning/appearance.
 - Host has no normal or floating windows.
+- Host has no persistent status-bar icon.
 - A successful host refresh updates the WidgetKit timeline.
 - Real data never clips at the small or medium system widget sizes.
 - Both sizes expose remaining, used, cycle, reset, plan, reset credits, and update time.
