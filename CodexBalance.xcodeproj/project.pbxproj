@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000000000000000000000301 /* CodexBalanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000101 /* CodexBalanceApp.swift */; };
+		000000000000000000000302 /* SyncController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000102 /* SyncController.swift */; };
+		000000000000000000000303 /* CodexUsageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000103 /* CodexUsageService.swift */; };
+		000000000000000000000304 /* SharedSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000104 /* SharedSnapshot.swift */; };
+		000000000000000000000305 /* CodexBalanceWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000201 /* CodexBalanceWidget.swift */; };
+		000000000000000000000306 /* SharedSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000202 /* SharedSnapshot.swift */; };
+		000000000000000000000411 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000000000000000401 /* SwiftUI.framework */; };
+		000000000000000000000412 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000000000000000402 /* WidgetKit.framework */; };
+		000000000000000000000413 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000000000000000403 /* AppKit.framework */; };
+		000000000000000000000414 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000000000000000402 /* WidgetKit.framework */; };
+		000000000000000000000415 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000000000000000401 /* SwiftUI.framework */; };
+		000000000000000000000903 /* CodexBalanceWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 000000000000000000000902 /* CodexBalanceWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		000000000000000000000802 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000000000000000000011;
+			remoteInfo = CodexBalanceWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		000000000000000000000504 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				000000000000000000000903 /* CodexBalanceWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000101 /* CodexBalanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodexBalanceApp.swift; sourceTree = "<group>"; };
+		000000000000000000000102 /* SyncController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncController.swift; sourceTree = "<group>"; };
+		000000000000000000000103 /* CodexUsageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodexUsageService.swift; sourceTree = "<group>"; };
+		000000000000000000000104 /* SharedSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedSnapshot.swift; sourceTree = "<group>"; };
+		000000000000000000000105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000000000000000000106 /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
+		000000000000000000000201 /* CodexBalanceWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodexBalanceWidget.swift; sourceTree = "<group>"; };
+		000000000000000000000202 /* SharedSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedSnapshot.swift; sourceTree = "<group>"; };
+		000000000000000000000203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000000000000000000204 /* Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Widget.entitlements; sourceTree = "<group>"; };
+		000000000000000000000401 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		000000000000000000000402 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		000000000000000000000403 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		000000000000000000000901 /* Codex 余额.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Codex 余额.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000902 /* CodexBalanceWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CodexBalanceWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000000000000000000000502 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000413 /* AppKit.framework in Frameworks */,
+				000000000000000000000412 /* WidgetKit.framework in Frameworks */,
+				000000000000000000000411 /* SwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000506 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000414 /* WidgetKit.framework in Frameworks */,
+				000000000000000000000415 /* SwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000020 /* App */,
+				000000000000000000000021 /* Widget */,
+				000000000000000000000022 /* Frameworks */,
+				000000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000901 /* Codex 余额.app */,
+				000000000000000000000902 /* CodexBalanceWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000000000000000000000020 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000101 /* CodexBalanceApp.swift */,
+				000000000000000000000102 /* SyncController.swift */,
+				000000000000000000000103 /* CodexUsageService.swift */,
+				000000000000000000000104 /* SharedSnapshot.swift */,
+				000000000000000000000105 /* Info.plist */,
+				000000000000000000000106 /* App.entitlements */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		000000000000000000000021 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000201 /* CodexBalanceWidget.swift */,
+				000000000000000000000202 /* SharedSnapshot.swift */,
+				000000000000000000000203 /* Info.plist */,
+				000000000000000000000204 /* Widget.entitlements */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		000000000000000000000022 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000401 /* SwiftUI.framework */,
+				000000000000000000000402 /* WidgetKit.framework */,
+				000000000000000000000403 /* AppKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000000010 /* CodexBalance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000710 /* Build configuration list for PBXNativeTarget "CodexBalance" */;
+			buildPhases = (
+				000000000000000000000501 /* Sources */,
+				000000000000000000000502 /* Frameworks */,
+				000000000000000000000503 /* Resources */,
+				000000000000000000000504 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				000000000000000000000801 /* PBXTargetDependency */,
+			);
+			name = CodexBalance;
+			productName = CodexBalance;
+			productReference = 000000000000000000000901 /* Codex 余额.app */;
+			productType = "com.apple.product-type.application";
+		};
+		000000000000000000000011 /* CodexBalanceWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000711 /* Build configuration list for PBXNativeTarget "CodexBalanceWidgetExtension" */;
+			buildPhases = (
+				000000000000000000000505 /* Sources */,
+				000000000000000000000506 /* Frameworks */,
+				000000000000000000000507 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodexBalanceWidgetExtension;
+			productName = CodexBalanceWidgetExtension;
+			productReference = 000000000000000000000902 /* CodexBalanceWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					000000000000000000000010 = { CreatedOnToolsVersion = 26.0; ProvisioningStyle = Automatic; };
+					000000000000000000000011 = { CreatedOnToolsVersion = 26.0; ProvisioningStyle = Automatic; };
+				};
+			};
+			buildConfigurationList = 000000000000000000000700 /* Build configuration list for PBXProject "CodexBalance" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = zh_CN;
+			hasScannedForEncodings = 0;
+			knownRegions = (zh_CN, Base, );
+			mainGroup = 000000000000000000000002;
+			productRefGroup = 000000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000000000000000010 /* CodexBalance */,
+				000000000000000000000011 /* CodexBalanceWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000000000000000000000503 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		000000000000000000000507 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000000000000000501 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000301 /* CodexBalanceApp.swift in Sources */,
+				000000000000000000000302 /* SyncController.swift in Sources */,
+				000000000000000000000303 /* CodexUsageService.swift in Sources */,
+				000000000000000000000304 /* SharedSnapshot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000505 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000305 /* CodexBalanceWidget.swift in Sources */,
+				000000000000000000000306 /* SharedSnapshot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		000000000000000000000801 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 000000000000000000000011 /* CodexBalanceWidgetExtension */;
+			targetProxy = 000000000000000000000802 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		000000000000000000000601 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; MACOSX_DEPLOYMENT_TARGET = 14.0; SDKROOT = macosx; SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; }; name = Debug; };
+		000000000000000000000602 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; MACOSX_DEPLOYMENT_TARGET = 14.0; SDKROOT = macosx; SWIFT_COMPILATION_MODE = wholemodule; SWIFT_OPTIMIZATION_LEVEL = "-O"; }; name = Release; };
+		000000000000000000000611 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/../Frameworks", );
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = local.codex.balance;
+				PRODUCT_NAME = "Codex 余额";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		000000000000000000000612 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/../Frameworks", );
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = local.codex.balance;
+				PRODUCT_NAME = "Codex 余额";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		000000000000000000000621 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
+				ENABLE_APP_SANDBOX = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/../../../../Frameworks", "@executable_path/../Frameworks", );
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = local.codex.balance.widget;
+				PRODUCT_NAME = CodexBalanceWidgetExtension;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		000000000000000000000622 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
+				ENABLE_APP_SANDBOX = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/../../../../Frameworks", "@executable_path/../Frameworks", );
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = local.codex.balance.widget;
+				PRODUCT_NAME = CodexBalanceWidgetExtension;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000000000000000700 /* Build configuration list for PBXProject "CodexBalance" */ = {isa = XCConfigurationList; buildConfigurations = (000000000000000000000601 /* Debug */, 000000000000000000000602 /* Release */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		000000000000000000000710 /* Build configuration list for PBXNativeTarget "CodexBalance" */ = {isa = XCConfigurationList; buildConfigurations = (000000000000000000000611 /* Debug */, 000000000000000000000612 /* Release */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		000000000000000000000711 /* Build configuration list for PBXNativeTarget "CodexBalanceWidgetExtension" */ = {isa = XCConfigurationList; buildConfigurations = (000000000000000000000621 /* Debug */, 000000000000000000000622 /* Release */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000000000000001 /* Project object */;
+}

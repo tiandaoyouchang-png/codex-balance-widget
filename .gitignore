@@ -1,0 +1,27 @@
+# Xcode
+DerivedData/
+.derived/
+.fix-derived/
+.signed-derived/
+build/
+*.xcuserstate
+xcuserdata/
+
+# Swift
+.build/
+.swiftpm/
+.preview-module-cache/
+
+# Generated QA binaries and intermediate captures
+QA/render-widget-preview
+QA/compare-images
+QA/*-v1.png
+QA/*-v2.png
+QA/*-v3.png
+QA/implementation-scheme-4*.png
+QA/scheme-4-comparison.png
+QA/comparison-dual-window-option-2-final.png
+References/codex-widget-scheme-4.png
+
+# macOS
+.DS_Store
