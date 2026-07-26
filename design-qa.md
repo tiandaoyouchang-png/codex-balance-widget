@@ -1,4 +1,15 @@
-# Design QA — Dual Quota Option 2
+# Design QA — Adaptive Single/Dual Quota Widget
+
+## Monthly single-window state
+
+- Source visual truth: `References/codex-widget-scheme-4.png`
+- Implementation screenshot: `QA/implementation-scheme-4-final.png`
+- Viewport: macOS WidgetKit `systemMedium`, 344 × 164 points
+- State: Team plan; one 43,800-minute monthly window at 77% remaining / 23% used; 3 reset credits
+
+The single-window rendering preserves the selected terminal-instrument hierarchy: one dominant green remaining value, detected “月度额度” cycle label, used percentage, reset date, reset credits, update time, and a full-width segmented meter. No second quota lane or synthetic combined value is introduced.
+
+## Dual-window state
 
 - Source visual truth: `References/codex-widget-dual-window-option-2.png`
 - Implementation screenshot: `QA/implementation-dual-window-option-2-final.png`
@@ -41,6 +52,7 @@ No additional crop was required. At 688 × 328, the smallest reset metadata, SF 
 **Implementation Checklist**
 
 - Build and sign the host and Widget extension.
+- Render the one-window monthly fixture and confirm the single-window layout.
 - Validate the two-window preview at 344 × 164 points.
 - Install locally and confirm WidgetKit timeline rendering.
 - Publish only normalized source, documentation, and non-sensitive design artifacts.
